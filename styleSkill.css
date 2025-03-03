@@ -188,6 +188,7 @@ nav a.activo {
 
     nav {
         margin-top: 1rem;
+        gap: 1rem;
     }
 
     nav a {
