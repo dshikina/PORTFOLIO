@@ -193,7 +193,7 @@ nav a.activo {
 
     nav a {
         font-size: 1.4rem;
-        margin-left: 1rem;
+        margin: 0.5rem 0;
     }
 
     .idiomas, .tecnicas, .personal {
