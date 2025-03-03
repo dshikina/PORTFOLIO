@@ -210,14 +210,6 @@ nav a.activo {
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 50%; 
-    }
-
-    header {
-        text-align: center;
-    }
-
     nav a {
         font-size: 1.4rem;
         margin: 0.5rem 0;
