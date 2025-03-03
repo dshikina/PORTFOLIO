@@ -211,7 +211,7 @@ nav a.activo {
 
 @media (max-width: 480px) {
     nav a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin: 0.5rem 0;
     }
 
