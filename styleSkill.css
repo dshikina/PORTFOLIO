@@ -37,7 +37,6 @@ header {
     z-index: 100;
 }
 
-
 .logo {
     font-size: 3rem;
     color: blue;
@@ -179,6 +178,38 @@ nav a.activo {
     text-align: justify;
 }
 
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 5%; 
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem; 
+    }
+
+    .idiomas, .tecnicas, .personal {
+        width: 80%; 
+        margin: 5rem auto; 
+        height: auto; 
+    }
+
+    .tecnicas ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .idiomas, .tecnicas, .personal {
+        width: 70%; 
+        margin: 15rem auto;
+    }
+}
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -189,12 +220,11 @@ nav a.activo {
 
     nav {
         margin-top: 1rem;
-        gap: 1rem;
     }
 
     nav a {
         font-size: 1.4rem;
-        margin: 0.5rem 0;
+        margin-left: 1rem;
     }
 
     .idiomas, .tecnicas, .personal {
@@ -212,13 +242,12 @@ nav a.activo {
 }
 
 @media (max-width: 480px) {
-    nav a {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
+    .logo {
+        font-size: 2.5rem; 
     }
 
-    .logo {
-        font-size: 2.5rem;
+    nav a {
+        font-size: 1.2rem;
     }
 
     .idiomas h1, .tecnicas h1, .personal h1 {
@@ -233,3 +262,4 @@ nav a.activo {
         height: 8px; 
     }
 }
+
