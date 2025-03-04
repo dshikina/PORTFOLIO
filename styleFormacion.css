@@ -106,10 +106,11 @@ nav a.activo {
 @media (max-width: 1024px) {
     header {
         padding: 1rem 5%;
+        margin-bottom: 3rem;
     }
 
     nav {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
     
     nav a {
@@ -124,10 +125,11 @@ nav a.activo {
         text-align: center;
         padding: 1rem 5%;
         background-color: #09153f;
+        margin-bottom: 3rem;
     }
 
     nav {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     nav a {
