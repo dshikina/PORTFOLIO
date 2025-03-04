@@ -108,6 +108,10 @@ nav a.activo {
         padding: 1rem 5%;
     }
 
+    nav {
+        margin-top: 1rem;
+    }
+    
     nav a {
         font-size: 1.6rem;
         margin-left: 2rem;
