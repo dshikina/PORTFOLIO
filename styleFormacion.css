@@ -117,6 +117,10 @@ nav a.activo {
         font-size: 1.6rem;
         margin-left: 2rem;
     }
+
+    .daw {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -138,6 +142,7 @@ nav a.activo {
     }
 
     .daw {
+        margin-top: 15rem;
         padding: 3rem;
         max-width: 90%;
     }
