@@ -102,6 +102,9 @@ nav a.activo {
     margin-top: 1rem;
 }
 
+.operario li{
+    text-align: justify;
+}
 img {
     margin-top: 25px;
     width: 150px;
@@ -213,3 +216,4 @@ ul li {
         font-size: 0.9rem;
     }
 }
+
