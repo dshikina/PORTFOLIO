@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio/Formación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styleFormacion.css">
+</head>
+<body>
+    <header>
+        <a href="https://github.com/dshikina/dshikina/blob/main/CV-Europass-DannielShikina.pdf" class="logo">Danniel</a>
+        <nav>
+            <a href="index.html"> Home</a>
+            <a href="formacion.html" class="activo">Formación</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="skills.html">Skills</a>
+            <a href="proyecto.html">Proyectos</a>
+        </nav>
+    </header>
+    <div class="carrusel-container">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="carrusel">
+            <div class="daw">
+                <h3>Grado Superior en Desarrollo de Aplicaciones Web</h3>
+                <h4>Cenec Atu Málaga | Málaga, España | 2023 - 2025</h4>
+                <p>Enfoque en diseño UX/UI, desarrollo frontend y backend, con proyectos prácticos en HTML, CSS, JavaScript y PHP.</p>
+                <a href="#" target="_blank">Ver más</a>
+            </div>
+            <div class="japones">
+                <h3>N5 - Examen Internacional de japonés Noryoku Shiken</h3>
+                <h4>APJ (Asociación Peruano Japonesa) | Lima, Perú | 2017</h4>
+                <p>Examen de idioma japonés en las que se evaluó competencias como comprensión lectora, gramática, vocabulario, diálogo y el escuchar una conversación.</p>
+                <a href="japones.pdf" target="_blank">Ver más</a>
+            </div>
+            <div class="ingles">
+                <h3>A2 Cambridge English</h3>
+                <h4>Universidad de Piura | Lima, Perú | 2016</h4>
+                <p>Examen de idioma inglés en las que se evaluó competencias como listening, reading, writing y speaking.</p>
+                <a href="ingles.pdf" target="_blank">Ver más</a>
+            </div>
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>    
+    <script>
+        let index = 0;
+        let items = document.querySelectorAll('.carrusel > div');
+        let totalItems = items.length;
+        function nextSlide() {
+            index = (index + 1) % totalItems;
+            document.querySelector('.carrusel').style.transform = `translateX(-${index * 100}%)`;
+        }
+        function prevSlide() {
+            index = (index - 1 + totalItems) % totalItems;
+            document.querySelector('.carrusel').style.transform = `translateX(-${index * 100}%)`;
+        }
+        setInterval(nextSlide, 3000);
+    </script>    
+</body>
+</html>
