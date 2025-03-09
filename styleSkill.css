@@ -319,7 +319,7 @@ nav a.activo {
     }
 }
 
-@media (max-width: 660px) and (max-height: 600px) {
+@media (max-width: 840px) and (max-height: 600px) {
     .tecnicas .fila {
         flex-direction: column; 
         gap: 1rem; 
