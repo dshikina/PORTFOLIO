@@ -240,7 +240,7 @@ nav a.activo {
 }
 
 
-@media (max-width: 838px) {
+@media (max-width: 810px) {
     header {
         flex-direction: column;
         text-align: center;
