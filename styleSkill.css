@@ -240,7 +240,7 @@ nav a.activo {
 }
 
 
-@media (max-width: 810px) {
+@media (max-width: 838px) {
     header {
         flex-direction: column;
         text-align: center;
@@ -266,8 +266,34 @@ nav a.activo {
     }
 
     .tecnicas ul {
-        flex-direction: column;
+        flex-direction: column;  
         gap: 1rem;
+    }
+
+    .tecnicas .fila {
+        flex-direction: column;  
+    }
+}
+
+@media (max-width: 660px) and (max-height: 600px) {
+    .tecnicas .fila {
+        flex-direction: column;
+        gap: 1rem; 
+    }
+
+    .contenedorHerramienta {
+        width: 100%;
+        margin-top: 1rem; 
+        background-color: transparent;
+    }
+
+    .contenedorInterno {
+        width: 80%; 
+    }
+
+    .contenedorHerramienta img {
+        width: 40px;
+        height: 40px; 
     }
 }
 
