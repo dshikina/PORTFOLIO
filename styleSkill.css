@@ -261,17 +261,26 @@ nav a.activo {
         width: 90%; 
         margin-left: auto;
         margin-right: auto;
-        margin-top: 15rem; 
+        margin-top: 5rem; 
         height: auto; 
     }
 
-    .tecnicas ul {
-        flex-direction: column;  
+    .tecnicas {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos en móviles */
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .fila {
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
 
-    .tecnicas .fila {
-        flex-direction: column;  
+    .contenedorHerramienta {
+        width: 100%;
     }
 }
 
