@@ -129,6 +129,11 @@ ul li {
     font-size: 11px;
 }
 
+
+.descLast {
+    margin-left: 35px;
+}
+
 @media (max-width: 1024px) {
     header {
         padding: 1rem 5%;
