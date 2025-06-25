@@ -72,7 +72,7 @@ nav a.activo {
     flex-wrap: wrap;
 }
 
-.asistente, .dependiente, .operario {
+.asistente, .dependiente, .operario, .marketing {
     width: 30%; 
     height: auto; 
     margin-top: 2rem; 
@@ -87,16 +87,16 @@ nav a.activo {
     border: solid 2px blue;
 }
 
-.asistente:hover, .dependiente:hover, .operario:hover {
+.asistente:hover, .dependiente:hover, .operario:hover, .marketing:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px blue;
 }
 
-.asistente h1, .dependiente h1, .operario h1 {
+.asistente h1, .dependiente h1, .operario h1, .marketing h1{
     color: blue;
 }
 
-.asistente h2, .operario h2 {
+.asistente h2, .operario h2, .marketing h2{
     font-size: 2rem; 
     margin-top: 2rem; 
 }
@@ -109,7 +109,7 @@ nav a.activo {
     font-size: 1rem;
 }
 
-.asistente img, .dependiente img, .operario img {
+.asistente img, .dependiente img, .operario img, .marketing img {
     margin-top: 25px;
     width: 120px; 
     height: 120px; 
@@ -130,7 +130,7 @@ ul li {
 }
 
 
-.descLast {
+.descLast, .depe, .mark{
     margin-left: 35px;
 }
 
@@ -148,7 +148,7 @@ ul li {
         gap: 2rem;
     }
 
-    .asistente, .dependiente, .operario {
+    .asistente, .dependiente, .operario, .marketing {
         width: 45%; 
         height: auto; 
         padding: 1.5rem;
@@ -184,7 +184,7 @@ ul li {
         gap: 2rem;
     }
 
-    .asistente, .dependiente, .operario {
+    .asistente, .dependiente, .operario, .marketing {
         width: 90%; 
         height: auto;
         margin-top: 2rem;
@@ -218,7 +218,7 @@ ul li {
         gap: 1rem;
     }
 
-    .asistente, .dependiente, .operario {
+    .asistente, .dependiente, .operario, .marketing {
         padding: 0.8rem;
     }
 
