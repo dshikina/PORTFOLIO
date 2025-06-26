@@ -20,12 +20,6 @@ body {
     overflow-x: hidden;
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -70,6 +64,90 @@ nav a.activo {
     border-bottom: 3px solid blue;
 }
 
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem; 
+    }
+
+    .carrusel-container {
+        max-width: 90%;
+    }
+
+    .carrusel > div {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 5%;
+        background-color: #09153f;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .carrusel-container {
+        margin-top: 150px;
+        max-width: 95%;
+    }
+
+    .carrusel > div {
+        padding: 2.5rem;
+    }
+
+    button.prev, button.next {
+        font-size: 2.5rem;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2rem; 
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .carrusel-container {
+        max-width: 100%;
+    }
+
+    .carrusel > div {
+        padding: 2rem;
+    }
+
+    button.prev, button.next {
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+}
+
 .carrusel-container {
     position: relative;
     width: 100%;
@@ -79,12 +157,13 @@ nav a.activo {
 }
 
 .carrusel {
+    margin-top: 200px;
     display: flex;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
 }
 
 .carrusel > div {
-    min-width: 100%; 
+    min-width: 100%;
     box-sizing: border-box;
     padding: 2rem;
     background: #1f1f1f;
@@ -139,7 +218,7 @@ nav a.activo {
 
 button.prev, button.next {
     position: absolute;
-    top: 50%;
+    top: 75%;
     transform: translateY(-50%);
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -165,6 +244,18 @@ button.prev:hover, button.next:hover {
 }
 
 @media (max-width: 1024px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem; 
+    }
+
+    .carrusel {
+        margin-top: 30px;
+    }
     .carrusel-container {
         max-width: 90%;
     }
@@ -174,7 +265,32 @@ button.prev:hover, button.next:hover {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1023px) {
+    .carrusel {
+        margin-top: 200px;
+    }
+}
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center !important;
+        padding: 1rem 5%;
+        background-color: #09153f;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
     .carrusel-container {
         margin-top: 150px;
         max-width: 95%;
@@ -189,24 +305,18 @@ button.prev:hover, button.next:hover {
         padding: 1.2rem;
     }
 
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem 5%;
-        background-color: #09153f;
-    }
 
-    nav {
-        margin-top: 1rem;
-    }
-
-    nav a {
-        font-size: 1.4rem;
-        margin-left: 1rem;
-    }
 }
 
 @media (max-width: 480px) {
+    .logo {
+        font-size: 2.5rem; 
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
     .carrusel-container {
         max-width: 100%;
     }
