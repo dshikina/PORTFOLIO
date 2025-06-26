@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="iconoDS.ico">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styleContacto.css">
+</head>
+<body>
+    <header>
+        <a href="CV-Europass-DannielShikina.pdf" class="logo">Danniel</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="formacion.html">Formación</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="skills.html">Skills</a>
+            <a href="proyecto.html">Proyectos</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="contacto">
+        <div class="contenidoContacto">
+            <p>¡No dudes en ponerte en contacto conmigo! Estoy siempre dispuesto a hablar sobre nuevas oportunidades, proyectos y cualquier otra consulta.</p>
+            
+            <form action="https://formspree.io/f/mldnokkn" method="POST">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
