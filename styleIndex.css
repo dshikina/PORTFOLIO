@@ -164,6 +164,25 @@ span {
     animation: typing 4s steps(14, end) infinite, blinkCursor 0.7s infinite;
 }
 
+.tecnologias {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tecnologias li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tecnologias i {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+
 @keyframes typing {
     0% { width: 0; }
     100% { width: 100%; }
@@ -220,6 +239,10 @@ span {
     nav a {
         font-size: 1.4rem;
         margin-left: 1rem;
+    }
+
+    .textoTipieado span {
+        font-size: 2rem;
     }
 }
 
