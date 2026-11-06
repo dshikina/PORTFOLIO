@@ -72,7 +72,7 @@ nav a.activo {
     flex-wrap: wrap;
 }
 
-.asistente, .dependiente, .operario, .marketing {
+.asistente, .dependiente, .operario, .marketing, .camarero, .lavaplatos {
     width: 30%; 
     height: auto; 
     margin-top: 2rem; 
@@ -87,16 +87,16 @@ nav a.activo {
     border: solid 2px blue;
 }
 
-.asistente:hover, .dependiente:hover, .operario:hover, .marketing:hover {
+.asistente:hover, .dependiente:hover, .operario:hover, .marketing:hover, .camarero:hover, .lavaplatos:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px blue;
 }
 
-.asistente h1, .dependiente h1, .operario h1, .marketing h1{
+.asistente h1, .dependiente h1, .operario h1, .marketing h1, .camarero h1, .lavaplatos h1{
     color: blue;
 }
 
-.asistente h2, .operario h2, .marketing h2{
+.asistente h2, .operario h2, .marketing h2, .dependiente h2, .camarero h2, .lavaplatos h2{
     font-size: 2rem; 
     margin-top: 2rem; 
 }
@@ -105,11 +105,11 @@ nav a.activo {
     margin-top: 1rem;
 }
 
-.asistente li, .operario li {
+/*.asistente li, .operario li, .camarero li {
     font-size: 1rem;
-}
+}*/
 
-.asistente img, .dependiente img, .operario img, .marketing img {
+.asistente img, .dependiente img, .operario img, .marketing img, .camarero img, .lavaplatos img {
     margin-top: 25px;
     width: 120px; 
     height: 120px; 
@@ -119,15 +119,43 @@ nav a.activo {
     border: solid 2px blue;
 }
 
-ul {
-    padding: 0;
+.asistente ul,
+.dependiente ul,
+.operario ul,
+.marketing ul,
+.camarero ul,
+.lavaplatos ul {
+    width: 100%;
+    padding-left: 25px;
+    list-style-position: outside;
+    text-align: left;
 }
 
-ul li {
+.asistente li,
+.dependiente li,
+.operario li,
+.marketing li,
+.camarero li,
+.lavaplatos li {
     margin-bottom: 1rem;
+    font-size: 1rem;
     text-align: left;
-    font-size: 11px;
+    line-height: 1.6;
 }
+
+
+.asistente ul ul {
+    margin-top: 1rem;
+    padding-left: 20px;
+}
+
+
+.descLast,
+.depe,
+.mark {
+    margin-left: 0;
+}
+
 
 
 .descLast, .depe, .mark{
@@ -148,7 +176,7 @@ ul li {
         gap: 2rem;
     }
 
-    .asistente, .dependiente, .operario, .marketing {
+    .asistente, .dependiente, .operario, .marketing, .camarero, .lavaplatos {
         width: 45%; 
         height: auto; 
         padding: 1.5rem;
@@ -184,7 +212,7 @@ ul li {
         gap: 2rem;
     }
 
-    .asistente, .dependiente, .operario, .marketing {
+    .asistente, .dependiente, .operario, .marketing, .camarero, .lavaplatos {
         width: 90%; 
         height: auto;
         margin-top: 2rem;
@@ -218,7 +246,7 @@ ul li {
         gap: 1rem;
     }
 
-    .asistente, .dependiente, .operario, .marketing {
+    .asistente, .dependiente, .operario, .marketing, .camarero, .lavaplatos{
         padding: 0.8rem;
     }
 
